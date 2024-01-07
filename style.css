@@ -48,9 +48,12 @@ body {
   right: 30px;
   bottom: 25px;
   cursor: pointer;
+  background-color: cornflowerblue;
+  color: #fff;
 }
 .btn button:hover {
   background-color: #fffefe;
+  color: black;
 }
 
 .elem {
