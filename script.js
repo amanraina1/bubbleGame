@@ -1,4 +1,4 @@
-var timer = 60;
+var timer = 30;
 var score = 0;
 var hitrn = 0;
 
@@ -20,6 +20,7 @@ function makeBubble() {
   document.querySelector("#pbtm").innerHTML = clutter;
 }
 function runTimer() {
+  getNewHit();
   var timerInt = setInterval(function () {
     if (timer > 0) {
       timer--;
@@ -27,7 +28,7 @@ function runTimer() {
     } else {
       clearInterval(timerInt);
       document.querySelector("#pbtm").innerHTML = `
-      <h1>GAME OVER !!!!</h1>
+      <h1>GAME OVER !!!! </h1>
       <h1>YOUR SCORE IS : ${score}</h1>
       `;
     }
@@ -43,5 +44,5 @@ document.querySelector("#pbtm").addEventListener("click", (e) => {
 });
 
 makeBubble();
-runTimer();
-getNewHit();
+document.getElementById("btn").addEventListener("click", runTimer);
+// getNewHit();

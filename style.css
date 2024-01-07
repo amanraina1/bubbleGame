@@ -37,6 +37,20 @@ body {
   align-items: center;
   justify-content: space-between;
   color: #fff;
+  position: relative;
+}
+.btn button {
+  font-size: 25px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  position: absolute;
+  right: 30px;
+  bottom: 25px;
+  cursor: pointer;
+}
+.btn button:hover {
+  background-color: #fffefe;
 }
 
 .elem {
