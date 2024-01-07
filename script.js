@@ -13,7 +13,7 @@ function getNewHit() {
 function makeBubble() {
   var clutter = "";
 
-  for (var i = 0; i <= 111; i++) {
+  for (var i = 0; i <= 125; i++) {
     const num = Math.floor(Math.random() * 10);
     clutter += `<div class="bubble">${num}</div>`;
   }
