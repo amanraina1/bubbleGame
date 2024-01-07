@@ -50,6 +50,7 @@ body {
   cursor: pointer;
   background-color: cornflowerblue;
   color: #fff;
+  transition: color 0.5s, background-color 0.5s;
 }
 .btn button:hover {
   background-color: #fffefe;
